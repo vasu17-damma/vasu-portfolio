@@ -1,30 +1,14 @@
-import { BrowserRouter } from "react-router-dom";
-
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
-import Footer from "./components/Footer";
-
-const App = () => {
+export default function App() {
   return (
-    <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <div className='relative z-0'>
-          <Contact />
-
-          <StarsCanvas />
-          <Footer/>
-        </div>
-      </div>
-    </BrowserRouter>
-  );
+    <div style={{ 
+      backgroundColor: 'black', 
+      color: 'white', 
+      height: '100vh', 
+      display: 'flex', 
+      justifyContent: 'center', 
+      alignItems: 'center' 
+    }}>
+      <h1>VASU.DEV IS ONLINE</h1>
+    </div>
+  )
 }
-
-export default App;
